@@ -16,7 +16,7 @@ browser = webdriver.Chrome()
 
 total_images = 1
 
-for page in range(1,2):
+for page in range(1,37):
 
 	browser.get("https://www.paperlesspost.com/cards?page=" + str(page))
 	time.sleep(2*random.random())
