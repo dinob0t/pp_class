@@ -15,6 +15,7 @@ import urllib
 browser = webdriver.Chrome()
 
 total_images = 1
+prefix = 'top_'
 
 for page in range(1,37):
 
@@ -45,7 +46,7 @@ for page in range(1,37):
 			pass
 
 		if success == 1:
-			f = open('data/' + str(total_images) + '.jpg','wb')
+			f = open('data/' + prefix + str(total_images) + '.jpg','wb')
 			f.write(dl)
 			f.close()
 			total_images +=1
